@@ -19,36 +19,36 @@
         <h1>Public Holidays</h1>
 
         <form id = "holidayForm"> 
-            <div class="container">
-            <div class="mb-3">
-              <label for="apiKey" class="form-label">API KEY:</label>
-              <input type="text" class="form-control" id="apiKey">
-            </div>
-
-            <div class="mb-3">
-                <label for="countryCode" class="form-label">COUNTRY-CODE:</label>
-                <input type="text" class="form-control" id="countryCode" required>
+          <div class="container">
+              <div class="mb-3">
+                <label for="apiKey" class="form-label">API KEY:</label>
+                <input type="text" class="form-control" id="apiKey">
               </div>
 
               <div class="mb-3">
-                <label for="year" class="form-label">YEAR:</label>
-                <input type="text" class="form-control" id="year" required>
-              </div>
+                  <label for="countryCode" class="form-label">COUNTRY-CODE (KE):</label>
+                  <input type="text" class="form-control" id="countryCode" >
+                </div>
 
-              <div class="mb-3">
-                <label for="month" class="form-label">MONTH:</label>
-                <input type="text" class="form-control" id="month" required>
-              </div>
+                <div class="mb-3">
+                  <label for="year" class="form-label">YEAR:</label>
+                  <input type="text" class="form-control" id="year" >
+                </div>
 
-              <div class="mb-3">
-                <label for="day" class="form-label">DAY:</label>
-                <input type="text" class="form-control" id="day" required>
-              </div>
+                <div class="mb-3">
+                  <label for="month" class="form-label">MONTH:</label>
+                  <input type="text" class="form-control" id="month" >
+                </div>
 
-            <button type="submit" class="btn btn-primary">Get Holiday</button>
-          </form>
-    </div>
-        <div id="holidayResults">
+                <div class="mb-3">
+                  <label for="day" class="form-label">DAY:</label>
+                  <input type="text" class="form-control" id="day" >
+                </div>
+
+              <button type="submit" class="btn btn-primary" id="searchBtn"> Get Holiday</button>
+        </form>
+          </div>
+          <div id="holidayResults">
             <!-- API response will be displayed here -->
         </div>
     </div>
