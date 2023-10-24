@@ -7,21 +7,22 @@ const clearButton = document.querySelector("#clearBtn")
 async function addevents (){
 
     const response = await fetch (apiUrl)
-   const data = await response.json();
+    const data = await response.json();
    
    console.log(data)
+
+
+   document.querySelector("#location"). innertext = data.location;
+  
 }
 addevents()
 
 searchButton.addEventListener("click", function() {
-    
-    
-    
     
     // alert("i have been clicked")
 })
 
 clearButton.addEventListener("click", function () {
 
-    alert ("destroyer")
+    //alert ("destroyer")
 })
