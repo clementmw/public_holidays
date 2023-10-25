@@ -9,31 +9,32 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="width: rem">
         <h1>Holiday Finder</h1>
 
         <form id="holidayForm">
-            <div class="container">
+            <div class="container" >
                 <div class="mb-3">
-                    <label for="location" class="form-label">Country:</label>
-                    <input type="text" class="form-control" id="location">
-                    <!-- <label for="year" class="form-label">Year:</label>
-                    <input type="text" class="form-control" id="year">
-                    <label for="month" class="form-label">Month:</label>
-                    <input type="text" class="form-control" id="month">
-                    <label for="day" class="form-label">Day:</label>
-                    <input type="text" class="form-control" id="day"> -->
-                    <input type="date" class="form-control" id="date">
+                     <div class="row g-3">
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" placeholder="Country" aria-label="City" id="location">
+                        </div>
+                        <div class="col-sm">
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        
+                      </div>
 
                 </div>
             </div>
-            <button type="submit" class="btn btn-secondary" id="searchBtn">Search Holiday</button>
-            <button type="button" class="btn btn-secondary" id="clearBtn">Clear Results</button>
+            <div class="button">
+            <button type="submit" class="btn btn-outline-primary" id="searchBtn">Search Holiday</button>
+            <button type="button" class="btn btn-outline-danger" id="clearBtn">Clear Results</button>
+            </div>
         </form>
 
         <div class="display-results"></div>
-            <!-- <label for="name" class="form-label">Holiday Name:</label>
-            <input type="text" class="form-control" id="name"> -->
+           
 
         </div>
 

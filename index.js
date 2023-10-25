@@ -27,13 +27,14 @@ searchButton.addEventListener('click',
     // const response = await fetch(apiUrl)
     // console.log(response)
 
-    fetch(apiUrl).then((response) => response.json())
+            // to call the data from the api//
+    fetch(apiUrl).then((response) => response.json()) 
     .then(data => {
         console.log(data)
         displayHolidays(data)
     })
 
-    // const data = await response.json();
+  
     
    
 });
@@ -49,10 +50,11 @@ function displayHolidays(data) {
             holidayDiv.classList.add('holiday');
 
             holidayDiv.innerHTML = `
-                <h2>${holiday.name}</h2>
-                <p><strong>Date:</strong> ${holiday.date}</p>
-                <p><strong>Holiday-Type:</strong> ${holiday.type}</p>
-                <p><strong>Week-day:</strong> ${holiday.week_day}</p>
+                <h2>${holiday.name.toUpperCase()}</h2>
+                <h3>COUNTRY:${holiday.location.toUpperCase()}</h3>
+                <p><strong>DATE:</strong> ${holiday.date}</p>
+                <p><strong>HOLIDAY-TYPE:</strong> ${holiday.type}</p>
+                <p><strong>DAY:</strong> ${holiday.week_day}</p>
             `;
 
             resultsDiv.appendChild(holidayDiv);
@@ -65,9 +67,10 @@ function displayHolidays(data) {
 document.getElementById('clearBtn').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('location').value = '';
-    document.getElementById('year').value = '';
-    document.getElementById('month').value = '';
-    document.getElementById('day').value = '';
+    document.getElementById("date").value  = "";
+    // document.getElementById('year').value = '';
+    // document.getElementById('month').value = '';
+    // document.getElementById('day').value = '';
     const resultsDiv = document.querySelector('.display-results');
     resultsDiv.innerHTML = '';
 });
