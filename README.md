@@ -7,5 +7,7 @@
  
  its like tinder but for holidays.
 
+ the diffrent country codes arre in the list below: 
+    https://docs.abstractapi.com/holidays#country-codes
  ## AUTHOR
   CLEMENT MACHARIA
