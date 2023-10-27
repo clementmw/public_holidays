@@ -16,10 +16,6 @@ searchButton.addEventListener('click',
         const month = date.getMonth() + 1;
         const day = date.getDate();
 
-        // console.log(date, document.getElementById('date').value)
-        // console.log(year, month, day)
-        
-
 
     const apiKey = 'e9b9a75e66ca4c89a0b2730ccdccb768'; 
     const apiUrl = `https://holidays.abstractapi.com/v1/?api_key=${apiKey}&country=${location}&year=${year}&month=${month}&day=${day}`;
@@ -38,8 +34,7 @@ searchButton.addEventListener('click',
     
    
 });
-
-
+ // to display the data //
 function displayHolidays(data) {
     const resultsDiv = document.querySelector('.display-results');
     resultsDiv.innerHTML = ''; // Clear previous results
@@ -68,9 +63,6 @@ document.getElementById('clearBtn').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('location').value = '';
     document.getElementById("date").value  = "";
-    // document.getElementById('year').value = '';
-    // document.getElementById('month').value = '';
-    // document.getElementById('day').value = '';
     const resultsDiv = document.querySelector('.display-results');
     resultsDiv.innerHTML = '';
 });
