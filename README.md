@@ -21,6 +21,10 @@ After all the files are in your matchine (cd) into the folder and run the (code 
  To get the country codes for your placeholder:
     https://docs.abstractapi.com/holidays#country-codes
 
+## Live link 
+for the live link:
+https://unrivaled-kashata-647a15.netlify.app/
+
 
  ## AUTHOR
   CLEMENT MACHARIA
